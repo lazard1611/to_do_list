@@ -1,0 +1,39 @@
+.todo_list_form {
+	@extend %global_flex_block_row_nowrap_center;
+}
+
+$input_height: 4rem;
+
+.form_input {
+	width: 100%;
+	max-width: 40rem;
+}
+
+.todo_list_form__input {
+	display: block;
+	width: 100%;
+	height: $input_height;
+	padding: 0 1rem;
+
+	border-radius: 1rem;
+	border: 1px solid $gray;
+}
+
+.add_todolist__btn {
+	display: block;
+	height: $input_height;
+	min-width: $input_height;
+	padding: .6rem;
+
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $gray;
+
+	border: 1px solid $gray;
+	border-radius: 1rem;
+	background-color: #c9b9ac;
+}
+
+.add_todolist {
+	margin-left: 1rem;
+}

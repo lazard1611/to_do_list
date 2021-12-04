@@ -3,5 +3,21 @@ extends ../layout/_layout
 block vars
 	- array = {body_class:'test_class', layout_mod:'', sub_keywords:'', title_inner:'Index'}
 block content_block
-	section.section.demo_mod
-		h1.section_title Hola #[a.test(href='https://glivera-team.com/') Maketodor] :)
+	section.section
+		.section_in
+			h1.section_title To Do List
+			.todo_list_form
+				+form_input({
+					class: 'todo_list_form__input',
+					block_class: 'todo_list_form__field',
+					field_class: 'control-wrap',
+					type: 'text',
+					label: '',
+					placeholder: 'Add task',
+					value: '',
+					id: 'input_1',
+				})
+				.add_todolist
+					button.add_todolist__btn(type="submit") add
+			h2.section_sub_title to day
+			.todo_list__wrap

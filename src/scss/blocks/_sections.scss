@@ -21,6 +21,21 @@
 	}
 }
 
+.section_title {
+	font-size: 6rem;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: $gray;
+}
+
+.section_sub_title {
+	font-size: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: $gray;
+}
 
 .section_in {
 	max-width: $page_width;
