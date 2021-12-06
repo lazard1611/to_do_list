@@ -20,6 +20,8 @@ $input_height: 4rem;
 }
 
 .add_todolist__btn {
+	@extend %transition_color_background;
+	
 	display: block;
 	height: $input_height;
 	min-width: $input_height;
@@ -32,8 +34,61 @@ $input_height: 4rem;
 	border: 1px solid $gray;
 	border-radius: 1rem;
 	background-color: #c9b9ac;
+
+	cursor: pointer;
+
+	&:focus,
+	&:hover {
+		background: darken(#c9b9ac, 10%);
+	}
 }
 
 .add_todolist {
 	margin-left: 1rem;
+}
+
+//==============To Do Item =================
+.todo_list__wrap {
+	margin-top: 5rem;
+}
+
+.todo_list_item {
+	@extend %global_flex_block_row_wrap_center_center;
+}
+
+.todo_list_item__descrip {
+	margin-left: 2rem;
+	min-width: 30rem;
+
+	font-size: 1.8rem;
+	color: $gray;
+
+	border-bottom: 1px dashed $black;
+}
+
+.todo_list_btn {
+	margin-left: 2rem;
+}
+
+.todo_list_item__complete {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+
+
+}
+
+.todo_list_btn__del {
+	@extend %transition_color_background;
+	font-size: 1.6rem;
+
+	padding: .6rem;
+	background-color: #c9b9ac;
+	border: 1px solid $black;
+	border-radius: 4px;
+
+	&:focus,
+	&:hover {
+		background: darken(#c9b9ac, 10%);
+	}
 }

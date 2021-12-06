@@ -8,6 +8,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 
 // ------------------  components
 import './components/test.js';
+import './components/todolist.js';
 // ------------------  components###
 
 window.jQuery = $;
